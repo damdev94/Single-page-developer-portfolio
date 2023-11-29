@@ -1,0 +1,111 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    position: relative;
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container-top{
+    width: 175px;
+    height: 383px;
+    background: url(assets/images/image-profile-mobile.webp) center center / cover no-repeat;
+}
+
+.top-bar {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.name {
+    margin: 0 auto;
+    width: 130px;
+    height: 32px;
+    font-size: 1.5em;
+    line-height: 32px;
+}
+
+.nav-elements {
+    display: flex;
+    justify-content: space-between;
+    width: 154px;
+    height: 20px;
+    margin-top: 20px;
+}
+
+.circle {
+    width: 130px;
+    height: 130px;
+    position: relative;
+    bottom: -47%;
+    right: -127%;
+}
+
+.image-rings {
+    position: absolute;
+    width: 530px;
+    height: 130px;
+    left: -120%;
+    top: 15%;
+    background: url(assets/images/pattern-rings.svg) center center / cover no-repeat;
+}
+
+.container-presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 25px 44px 0 25px;
+}
+
+.container-presentation h1 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.container-presentation .underline {
+    text-decoration: underline turquoise;
+}
+
+.container-presentation p {
+    font-weight: 700;
+    font-size: 1.1em;
+    text-align: center;
+    color: rgb(43, 151, 228);
+}
+
+.container-presentation .contact {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.3em;
+    color: rgb(0, 191, 255);
+    margin: 20px auto;
+    padding-bottom: 60px;
+}
+
+@media only screen and (min-width: 600px) {
+    .container-top {
+        width: 322px;
+        height: 600px;
+    }
+    .top-bar {
+        width: 100%;
+    }
+}
+
+
