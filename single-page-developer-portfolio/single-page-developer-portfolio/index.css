@@ -238,6 +238,62 @@ body {
     width: 110px;
 }
 
+.footer {
+    background-color: #242424;
+}
+
+.form-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 345px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.form-name , 
+.form-email{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 340px;
+    height: 45px;
+    background-color: #242424;
+    color: #d9d9d9;
+    border: none;
+    border-bottom: solid 1px #d9d9d9;
+}
+
+.form-message {
+    display: flex;
+    margin: auto;
+    width: 340px;
+    height: 110px;
+    background-color: #242424;
+    color: #d9d9d9;
+    border: none;
+    border-bottom: solid 1px #d9d9d9;
+}
+
+.form-name , 
+.form-email::placeholder, 
+.form-message::placeholder {
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.form-message {
+    height: 110px !important;
+}
+
+.footer .form-button {
+    display: block;
+    width: 145px;
+    height: 40px;
+}
+
 @media only screen and (min-width: 600px) {
     .header{
         height: 600px;
@@ -382,6 +438,7 @@ body {
     }
 
     .projects-top-bar {
+        margin-top: 100px;
         width: 710px;
         height: 75px;
         align-items: center;
@@ -393,16 +450,42 @@ body {
 
     .projects {
         width: 710px;
-        margin: 20px auto 0 auto;
+        margin: 0 auto ;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .img-project {
+        margin: 0;
+    }
+
+    .project {
+        margin-top: 60px;
+        height: 380px;
+    }
+
+    .project-main {
+        width: 340px;
+        height: 380px;
+    }
+
+    .project:first-child {
+        height: 380px;
+    }
+
+    .project-link {
+        margin-bottom: 0;
     }
 
     .contact::after {
         width: 95px;
     }
 
-    .project:first-child {
-        height: 440px;
+    .view-project::after {
+        width: 110px;
+    }
+
+    .view-code::after{
+        width: 85px;
     }
 }
 
@@ -438,6 +521,64 @@ body {
         height: 330px;
         padding-top: 70px;
         margin-top: 105px;
+    }
+
+    .projects-top-bar {
+        margin-top: 140px;
+        width: 1100px;
+        height: 80px;
+        margin-bottom: 10px;
+        align-items: center;
+    }
+
+    .projects {
+        width: 1100px;
+        grid-column-gap: 30px;
+    }
+
+    .project {
+        margin-top: 80px;
+        width: 540px;
+        height: 490px;
+    }
+
+    .project:nth-child(odd) {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .project-main {
+        height: 490px;
+    }
+
+    .project:first-child {
+        height: 490px;
+    }
+
+    .project-link {
+        display: none;
+        position: relative;
+        top: -290px;
+        left: 125px;
+        z-index: 2;
+    }
+
+    .project-main:hover .project-link {
+        display: flex;
+    }
+
+    .project-main:hover .img-project {
+        filter: brightness(40%);
+    }
+
+    .img-project img {
+        width: 500px;
+        height: 400px;
+    }
+
+    .project-main {
+        width: 100%;
+        height: 100%;
     }
 }
 
