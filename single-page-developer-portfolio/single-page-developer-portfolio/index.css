@@ -293,8 +293,8 @@ body {
 }
 
 .form-name , 
-.form-email::placeholder, 
-.form-message::placeholder {
+.form-email, 
+.form-message {
     padding-left: 20px;
     font-size: 16px;
 }
@@ -350,6 +350,24 @@ body {
     transition: 0.4s;
     transform: scale(1.2);
     opacity: 0.7;
+}
+
+.img-warning {
+    display: none;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    top: -45px;
+    left: 415px;
+}
+
+.error-message {
+    display: none;
+    position: relative;
+    font-size: 0.75em;
+    color: #ff6f5b;
+    top : -15px;
+    left: 300px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -555,6 +573,12 @@ body {
         width: 445px;
     }
 
+    .form-name,
+    .form-email {
+        border: none;
+        border-bottom: solid 1px ;
+    }
+
     .form-text h1 {
         font-size: 4.5em;
     }
@@ -576,7 +600,7 @@ body {
     }
 }
 
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: 1150px){
 
     .header{
         overflow: visible;
@@ -693,4 +717,5 @@ body {
     .footer-social {
         width: 1110px;
     }
+
 } 
